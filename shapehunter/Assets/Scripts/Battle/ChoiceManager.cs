@@ -39,6 +39,8 @@ public class ChoiceManager : MonoBehaviour {
 
     void makeChoice(int i)
     {
+        grid.SetActive(false);
+
         if (onAnimalChoiceMade != null)
         {
             onAnimalChoiceMade(animalChoices[i]);

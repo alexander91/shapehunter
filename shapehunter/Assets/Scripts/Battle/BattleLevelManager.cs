@@ -13,7 +13,7 @@ public class BattleLevelManager : MonoBehaviour {
     UILabel endText;
 
 
-
+    GameState state = new ShowingChoices();
 
     abstract class GameState
     {
@@ -24,13 +24,29 @@ public class BattleLevelManager : MonoBehaviour {
     {
         public override void Proceed(BattleLevelManager manager)
         {
-            throw new NotImplementedException();
+            
         }
+    }
+
+    class EndScreenChoices : GameState
+    {
+        public override void Proceed(BattleLevelManager manager)
+        {
+            var info = Game.Instance.PlayerInfo;
+            info.complete.Add(info.currentEnemy);
+            Application.LoadLevel("tableScene");
+        }
+    }
+    
+    public void Proceed()
+    {
+        state.Proceed(this);
     }
 
     void ManageChoice(string animal)
     {
         endText.text = winDictionary[animal].ToString();
+        state = new EndScreenChoices();
     }
     
     XmlNode target;

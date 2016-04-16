@@ -33,3 +33,7 @@ Thumbs.db
 # Ours
 shapehunter/Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity*
 shapehunter/Assets/UnityVS/Editor/UnityVS.VersionSpecific*
+shapehunter/Assets/Resources/art/animals/Thumbs.db.meta
+shapehunter/Assets/Resources/art/photos/Thumbs.db.meta
+shapehunter/Assets/Art/Thumbs.db.meta
+shapehunter/Assets/Plugins.meta
