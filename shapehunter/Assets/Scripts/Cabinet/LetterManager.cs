@@ -24,6 +24,9 @@ public class LetterManager : MonoBehaviour
         targetMainDescription.text = tnode.SelectSingleNode("description").InnerText;
         targetAdditionalDescription.text = tnode.SelectSingleNode("descriptionAdd").InnerText;
 
+        string texturePath = "art/photos/" + tnode.Attributes["photo"].Value;
+        targetPhoto.mainTexture = Resources.Load(texturePath) as Texture2D;
+
         this.target = target;
     }
 

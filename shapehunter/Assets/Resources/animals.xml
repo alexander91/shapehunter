@@ -1,6 +1,6 @@
 <animals>
-	<mice name="Mouse" picture="mouse.png"/>
-	<bear name="Bear" picture="bear.png"/>
-	<frog name="Frog" picture="frog.png"/>
-	<snake name="Snake" picture="snake.png"/>
+	<mice name="Mouse" picture="mouse"/>
+	<bear name="Bear" picture="bear"/>
+	<frog name="Frog" picture="frog"/>
+	<snake name="Snake" picture="snake"/>
 </animals>
