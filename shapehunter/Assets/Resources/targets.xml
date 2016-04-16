@@ -1,0 +1,15 @@
+<targets>
+	<bear name="Garlon Eldair" animal="bear">
+		<options>
+			<option name="bear"/>
+			<option name="mouse"/>
+			<option name="frog"/>
+			<option name="snake"/>			
+		</options>
+		<description>
+			A famous fighter, on the peak of his career.
+		</description>
+		<descriptionAdd>
+		</descriptionAdd>	
+	</bear>
+</targets>

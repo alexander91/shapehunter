@@ -1,12 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Xml;
 
 public class Game
 {
+    Player player = new Player();
 
-    GameManager manager;
+    CabinetLevelManager manager;
 
-    public GameManager Manager
+    public CabinetLevelManager Manager
     {
         get { return manager; }
         set { manager = value; }
@@ -27,4 +29,53 @@ public class Game
         }
     }
 
+    public Player PlayerInfo
+    {
+        get
+        {
+            return player;
+        }
+
+        set
+        {
+            player = value;
+        }
+    }
+
+    public XmlNode animalNode(string animal)
+    {
+        XmlDocument xmlDoc = new XmlDocument(); // xmlDoc is the new xml document.
+
+        //xmlDoc.Load("Assets/data/buildings.xml"); // load the file.
+        TextAsset PrnFile;
+
+        PrnFile = Resources.Load("animals") as TextAsset;
+
+
+        xmlDoc.LoadXml(PrnFile.text); // load the file.
+
+
+        XmlNode doc = xmlDoc.GetElementsByTagName("animals")[0];
+        XmlNode node = doc.SelectSingleNode(animal);
+
+        return node;
+    }
+
+    public XmlNode targetNode(string target)
+    {
+        XmlDocument xmlDoc = new XmlDocument(); // xmlDoc is the new xml document.
+
+        //xmlDoc.Load("Assets/data/buildings.xml"); // load the file.
+        TextAsset PrnFile;
+
+        PrnFile = Resources.Load("targets") as TextAsset;
+
+
+        xmlDoc.LoadXml(PrnFile.text); // load the file.
+
+        XmlNode doc = xmlDoc.GetElementsByTagName("targets")[0];
+        XmlNode node = doc.SelectSingleNode(target);
+
+        return node;
+    }
 }
