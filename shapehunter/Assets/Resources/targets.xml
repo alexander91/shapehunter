@@ -1,9 +1,10 @@
 <targets>
+	<!-- results 0 - enemy run, 1 - fight win, -1 - you run, -2 - fight lose -->
 	<bear name="Garlon Eldair" animal="bear" photo="bearPortret">
 		<options>
-			<option name="bear" result="0" />
 			<option name="mouse" result="-1" />
-			<option name="frog" result="-1"/>
+			<option name="mouse" result="-1" />
+			<option name="frog" result="-2"/>
 			<option name="snake" result="1"/>			
 		</options>
 		<description>
