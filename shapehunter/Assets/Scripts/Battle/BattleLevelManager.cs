@@ -58,6 +58,8 @@ public class BattleLevelManager : MonoBehaviour {
         {
             manager.me.mainTexture = Resources.Load(manager.choiceManager.picturePathByAnimalName(manager.myAnimal)) as Texture2D;
             manager.enemy.mainTexture = Resources.Load(manager.choiceManager.picturePathByAnimalName(manager.enemyAnimal)) as Texture2D;
+            manager.me.width = manager.me.height;
+            manager.enemy.width = manager.enemy.height;
             foreach (var tween in manager.changingFormTweens)
             {
                 tween.PlayReverse();
