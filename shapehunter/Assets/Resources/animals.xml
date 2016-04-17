@@ -1,7 +1,7 @@
 <animals>
 	<bear name="Bear" picture="bear"/>
 	<frog name="Frog" picture="frog"/>
-	<snake name="Snake" picture="snake"/>
+	<snake name="Snake" picture="Snake2"/>
 	<sokol name="Sokol" picture="sokol"/>
 	<raven name="Raven" picture="raven"/>
 	<fox name="fox" picture="fox"/>
