@@ -50,6 +50,12 @@ public class ChoiceManager : MonoBehaviour {
         }
     }
 
+    public string picturePathByAnimalName(string animalName)
+    {
+        var animal = Game.Instance.animalNode(animalName);
+        return "art/animals/" + animal.Attributes["picture"].Value;
+    }
+
     string[] animalChoices;
 
     public void activateWithChoices(string[] choices)
@@ -58,8 +64,7 @@ public class ChoiceManager : MonoBehaviour {
 
         for (int i = 0; i < choices.Length; ++i)
         {
-            string texturePath = "art/animals/" + choices[i];
-            textureArr[i].mainTexture = Resources.Load(texturePath) as Texture2D;
+            textureArr[i].mainTexture = Resources.Load(picturePathByAnimalName(choices[i])) as Texture2D;
         }
     }
 

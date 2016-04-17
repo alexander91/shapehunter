@@ -55,9 +55,9 @@ public class BattleLevelManager : MonoBehaviour {
     class ChangeFormMiddle : GameState
     {
         public override void Proceed(BattleLevelManager manager)
-        {            
-            manager.me.mainTexture = Resources.Load(manager.picturePathByAnimalName(manager.myAnimal)) as Texture2D;
-            manager.enemy.mainTexture = Resources.Load(manager.picturePathByAnimalName(manager.enemyAnimal)) as Texture2D;
+        {
+            manager.me.mainTexture = Resources.Load(manager.choiceManager.picturePathByAnimalName(manager.myAnimal)) as Texture2D;
+            manager.enemy.mainTexture = Resources.Load(manager.choiceManager.picturePathByAnimalName(manager.enemyAnimal)) as Texture2D;
             foreach (var tween in manager.changingFormTweens)
             {
                 tween.PlayReverse();
@@ -89,13 +89,38 @@ public class BattleLevelManager : MonoBehaviour {
     {
         public override void Proceed(BattleLevelManager manager)
         {
+            manager.ProcessResult();
             var info = Game.Instance.PlayerInfo;
-            info.complete.Add(info.currentEnemy);
             Application.LoadLevel("tableScene");
         }
     }
 
     #endregion
+
+    private void ProcessResult()
+    {
+        var info = Game.Instance.PlayerInfo;
+        info.complete.Add(info.currentEnemy);
+
+        var result = winDictionary[myAnimal];
+
+        if (result == BattleResult.FightWon)
+        {
+            info.money += 1;
+        }
+        else if (result == BattleResult.FightLostDeath)
+        {
+            Game.Instance.ResetPlayer();
+        }
+        else if (result == BattleResult.EnemyRan)
+        {
+            info.money -= 1;
+        }
+        else if (result == BattleResult.YouRan)
+        {
+            info.money -= 1;
+        }
+    }    
 
     public void Proceed()
     {
@@ -117,18 +142,12 @@ public class BattleLevelManager : MonoBehaviour {
     
     XmlNode target;
 
-    string picturePathByAnimalName(string animalName)
-    {
-        var animal = Game.Instance.animalNode(animalName);
-        return "art/animals/" + animal.Attributes["picture"];
-    }
-
     public enum BattleResult
     {
-        FightWin = 1,
-        YouRun = -1,
-        EnemyRun = 0,
-        FightLose = -2
+        FightWon = 1,
+        YouRan = -1,
+        EnemyRan = 0,
+        FightLostDeath = -2
     }
 
     Dictionary<string, BattleResult> winDictionary = new Dictionary<string, BattleResult>();

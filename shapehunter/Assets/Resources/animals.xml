@@ -2,11 +2,12 @@
 	<bear name="Bear" picture="bear"/>
 	<frog name="Frog" picture="frog"/>
 	<snake name="Snake" picture="snake"/>
-	<sokol name="Sokol" picture= "sokol"/>
-	<raven name="Raven" picture= "raven"/>
-	<fox name = "fox" picture = "fox"/>
-	<mouse name = "mouse" picture = "mouse1"/>
-	<dog name = "dog" picture = "dog"/>
-	<cat name = "cat" picture = "cat"/>
-	<strekoza name = "strekoza" picture = "str"/>
+	<sokol name="Sokol" picture="sokol"/>
+	<raven name="Raven" picture="raven"/>
+	<fox name="fox" picture="fox"/>
+	<mouse name="mouse" picture="mouse1"/>
+	<dog name="dog" picture="dog"/>
+	<cat name="cat" picture="cat"/>
+	<strekoza name="strekoza" picture="str"/>
+	<elephant name="elephant" picture="elephant"/>
 </animals>

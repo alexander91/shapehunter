@@ -13,6 +13,9 @@ public class CabinetLevelManager : MonoBehaviour
     [SerializeField]
     LetterManager letter;
 
+    [SerializeField]
+    UILabel gameFinishText;
+
     enum Status
     {
         PlainMenu,
@@ -44,6 +47,7 @@ public class CabinetLevelManager : MonoBehaviour
             return;
         }
         var target = info.targetsIds[info.complete.Count];
+        Debug.Log("current target is " + target);
 
         withLetter.SetActive(true);
         withoutLetter.SetActive(false);

@@ -35,16 +35,16 @@ public class BattleManager : MonoBehaviour {
 
     public void StartFight(BattleLevelManager.BattleResult result)
     {
-        if (result == BattleLevelManager.BattleResult.FightWin)
+        if (result == BattleLevelManager.BattleResult.FightWon)
         {
             RunTweens(fightWin);
-        } else if (result == BattleLevelManager.BattleResult.FightLose)
+        } else if (result == BattleLevelManager.BattleResult.FightLostDeath)
         {
             RunTweens(fightLose);
-        } else if (result == BattleLevelManager.BattleResult.EnemyRun)
+        } else if (result == BattleLevelManager.BattleResult.EnemyRan)
         {
             RunTweens(enemyRun);
-        } else if (result == BattleLevelManager.BattleResult.YouRun)
+        } else if (result == BattleLevelManager.BattleResult.YouRan)
         {
             RunTweens(iRun);
         }

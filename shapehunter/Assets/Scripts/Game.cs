@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Xml;
+using System;
 
 public class Game
 {
@@ -77,5 +78,10 @@ public class Game
         XmlNode node = doc.SelectSingleNode(target);
 
         return node;
+    }
+
+    internal void ResetPlayer()
+    {
+        player = new Player();
     }
 }

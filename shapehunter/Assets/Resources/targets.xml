@@ -3,14 +3,51 @@
 	<bear name="Garlon Eldair" animal="bear" photo="bearPortret">
 		<options>
 			<option name="mouse" result="-1" />
-			<option name="mouse" result="-1" />
-			<option name="frog" result="-2"/>
+			<option name="strekoza" result="-1" />
+			<option name="dog" result="-2"/>
 			<option name="snake" result="1"/>			
 		</options>
 		<description>
-			A famous fighter, on the peak of his career.
+			A famous fighter, on the peak of his career, he is rather a mystery.
+			It is known that he is not much of a talker.
+			He is known for biting off his opponents ear. 
+			As he moves on the ring he seems clumpsy, but in reality he is very agile.			
 		</description>
 		<descriptionAdd>
+			Your agents also found out that he really likes to sleep almost through the whole weekend.
+			If he does not have a match that is.
 		</descriptionAdd>	
 	</bear>
+	
+	<fox name="Amelina Glauss" animal="fox" photo="foxPort">
+		<options>
+			<option name="mouse" result="-2" />
+			<option name="bear" result="0" />
+			<option name="dog" result="1"/>
+			<option name="snake" result="0"/>			
+		</options>
+		<description>
+			An actress who just got her 5th award. She is known not only for her looks and acting but also for being rather smart.
+			She is sly and, some say, ruthless. Her words are always known to have a double meaning.
+		</description>			
+		<descriptionAdd>
+			She likes to wear outfits with fur collar.
+		</descriptionAdd>	
+	</fox>
+	
+	<elephant name="Deglon Prumt" animal="elephant" photo="bearPortret">
+		<options>
+			<option name="mouse" result="1" />
+			<option name="strekoza" result="-1" />
+			<option name="dog" result="-2"/>
+			<option name="raven" result="-1"/>			
+		</options>
+		<description>
+			Very big and rather fat man. he is an owner and director of a company that makes hoses and tubes.
+			He is very good at making all others feel minor and irrelevant.
+		</description>
+		<descriptionAdd>
+			When he was young his rivals shop was mysteriosly ruined.  
+		</descriptionAdd>	
+	</elephant>
 </targets>
