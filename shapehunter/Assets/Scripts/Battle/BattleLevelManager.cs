@@ -120,11 +120,9 @@ public class BattleLevelManager : MonoBehaviour {
         }
         else if (result == BattleResult.EnemyRan)
         {
-            info.money -= 1;
         }
         else if (result == BattleResult.YouRan)
         {
-            info.money -= 1;
         }
     }    
 
@@ -158,7 +156,7 @@ public class BattleLevelManager : MonoBehaviour {
     Dictionary<BattleResult, string> resultText = new Dictionary<BattleResult, string>()
     { {BattleResult.FightWon, "You made a kill and your job is done. Perfect, as usual." },
       {BattleResult.FightLostDeath, "Life plays jokes sometimes. Prey and predator changed roles. You are dead." },
-      {BattleResult.EnemyRan, "You counts catch this sly bastard! He ran away, you lost your chance to yearn some money." },
+      {BattleResult.EnemyRan, "You couldn't catch this sly bastard! Your prey ran away and you lost your chance to yearn some money." },
       {BattleResult.YouRan, "Given the circumstances you did not have any choice but to save yourself. Pride is good but life is priceless. At least yours is ;)" } };
 
     Dictionary<string, BattleResult> winDictionary = new Dictionary<string, BattleResult>();

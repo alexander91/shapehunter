@@ -19,7 +19,7 @@
 		</descriptionAdd>	
 	</bear>
 	
-	<fox name="Amelina Glauss" animal="fox" photo="foxPort" silhouette="person">
+	<fox name="Amelina Glauss" animal="fox" photo="foxPort" silhouette="woman-silhouette">
 		<options>
 			<option name="mouse" result="-2" />
 			<option name="bear" result="0" />
