@@ -43,7 +43,7 @@ public class CabinetLevelManager : MonoBehaviour
         var info = Game.Instance.PlayerInfo;
         if (info.targetsIds.Count == info.complete.Count)
         {
-            // YOU WON!
+            Application.LoadLevel("finishScreen"); 
             return;
         }
         var target = info.targetsIds[info.complete.Count];
