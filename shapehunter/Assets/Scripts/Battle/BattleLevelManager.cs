@@ -156,12 +156,18 @@ public class BattleLevelManager : MonoBehaviour {
     string enemyAnimal;
     string myAnimal;
 
+    public string silhouettePath(string name)
+    {
+        return "art/silhouettes/" + name;
+    }
+
     // Use this for initialization
     void Start () {
         var targetName = Game.Instance.PlayerInfo.currentEnemy;
         target = Game.Instance.targetNode(targetName);
 
         enemyAnimal = target.Attributes["animal"].Value;
+        enemy.mainTexture = Resources.Load(silhouettePath(target.Attributes["silhouette"].Value)) as Texture2D;
 
         List<string> animals = new List<string>();
         var options = target.SelectSingleNode("options").SelectNodes("option");

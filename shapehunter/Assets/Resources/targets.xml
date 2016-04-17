@@ -1,6 +1,6 @@
 <targets>
 	<!-- results 0 - enemy run, 1 - fight win, -1 - you run, -2 - fight lose -->
-	<bear name="Garlon Eldair" animal="bear" photo="bearPortret">
+	<bear name="Garlon Eldair" animal="bear" photo="bearPortret" silhouette="person">
 		<options>
 			<option name="mouse" result="-1" />
 			<option name="strekoza" result="-1" />
@@ -19,7 +19,7 @@
 		</descriptionAdd>	
 	</bear>
 	
-	<fox name="Amelina Glauss" animal="fox" photo="foxPort">
+	<fox name="Amelina Glauss" animal="fox" photo="foxPort" silhouette="person">
 		<options>
 			<option name="mouse" result="-2" />
 			<option name="bear" result="0" />
@@ -35,7 +35,7 @@
 		</descriptionAdd>	
 	</fox>
 	
-	<elephant name="Deglon Prumt" animal="elephant" photo="bearPortret">
+	<elephant name="Deglon Prumt" animal="elephant" photo="bearPortret" silhouette="person">
 		<options>
 			<option name="mouse" result="1" />
 			<option name="strekoza" result="-1" />
