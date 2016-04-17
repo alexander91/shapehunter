@@ -23,6 +23,9 @@ public class BattleLevelManager : MonoBehaviour {
     [SerializeField]
     BattleManager battleManager;
 
+    [SerializeField]
+    GameObject endRound;
+
     GameState state = new ShowingChoices();
 
     #region States
@@ -82,6 +85,7 @@ public class BattleLevelManager : MonoBehaviour {
     {
         public override void Proceed(BattleLevelManager manager)
         {
+            manager.endRound.SetActive(true);
             manager.ShowFightResults(manager.myAnimal);
             manager.state = new EndScreenChoices();
         }
@@ -138,7 +142,7 @@ public class BattleLevelManager : MonoBehaviour {
 
     void ShowFightResults(string animal)
     {
-        endText.text = winDictionary[animal].ToString();
+        endText.text = resultText[winDictionary[animal]];
         state = new EndScreenChoices();
     }
     
@@ -151,6 +155,11 @@ public class BattleLevelManager : MonoBehaviour {
         EnemyRan = 0,
         FightLostDeath = -2
     }
+    Dictionary<BattleResult, string> resultText = new Dictionary<BattleResult, string>()
+    { {BattleResult.FightWon, "You made a kill and your job is done. Perfect, as usual." },
+      {BattleResult.FightLostDeath, "Life plays jokes sometimes. Prey and predator changed roles. You are dead." },
+      {BattleResult.EnemyRan, "You counts catch this sly bastard! He ran away, you lost your chance to yearn some money." },
+      {BattleResult.YouRan, "Given the circumstances you did not have any choice but to save yourself. Pride is good but life is priceless. At least yours is ;)" } };
 
     Dictionary<string, BattleResult> winDictionary = new Dictionary<string, BattleResult>();
     string enemyAnimal;
