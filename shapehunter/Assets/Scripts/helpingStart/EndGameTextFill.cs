@@ -24,4 +24,10 @@ public class EndGameTextFill : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    public void Restart()
+    {
+        Game.Instance.ResetPlayer();
+        Application.LoadLevel("tableScene");
+    }
 }
