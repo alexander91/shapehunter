@@ -10,4 +10,5 @@
 	<cat name="cat" picture="cat"/>
 	<strekoza name="strekoza" picture="str"/>
 	<elephant name="elephant" picture="elephant"/>
+	<lynx name="lynx" picture="lynx"/>
 </animals>
