@@ -11,4 +11,8 @@
 	<strekoza name="strekoza" picture="str"/>
 	<elephant name="elephant" picture="elephant"/>
 	<lynx name="lynx" picture="lynx"/>
+	<spider name="spider" picture="spider"/>
+	<mangoose name="mangoose" picture="mangoose"/>
+	<fly name="fly" picture="fly"/>
+	<lion name="lion" picture="lion"/>
 </animals>

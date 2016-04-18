@@ -21,9 +21,9 @@
 	
 	<fox name="Amelina Glauss" animal="fox" photo="foxPort" silhouette="woman-silhouette">
 		<options>
+			<option name="dog" result="1"/>
 			<option name="mouse" result="-2" />
 			<option name="bear" result="0" />
-			<option name="dog" result="1"/>
 			<option name="snake" result="0"/>			
 		</options>
 		<description>
@@ -37,9 +37,9 @@
 	
 	<elephant name="Deglon Prumt" animal="elephant" photo="Fat_Man_clip_art_hight" silhouette="person">
 		<options>
-			<option name="mouse" result="1" />
-			<option name="strekoza" result="-1" />
 			<option name="dog" result="-2"/>
+			<option name="mangoose" result="-1" />
+			<option name="mouse" result="1" />
 			<option name="raven" result="-1"/>			
 		</options>
 		<description>
@@ -68,10 +68,10 @@
 	
 	<sokol name="Al Bein" animal="sokol" photo="sokol" silhouette="s_cil">
 		<options>
-			<option name="elephant" result="-2" />
-			<option name="bear" result="-2"/>
+			<option name="bear" result="0"/>
 			<option name="lynx" result="1"/>			
-			<option name="strekoza" result="-1" />
+			<option name="elephant" result="0" />
+			<option name="mangoose" result="-2" />
 		</options>
 		<description>
 			Now a general, he was a famous pilot.
@@ -80,4 +80,52 @@
 			It is known that he once survived a crash without any injuries.
 		</descriptionAdd>	
 	</sokol>
+	
+	<fly name="Dalran Monar" animal="fly" photo="journalist" silhouette="s_cil">
+		<options>
+			<option name="elephant" result="-2" />
+			<option name="bear" result="-2"/>
+			<option name="lynx" result="0"/>			
+			<option name="strekoza" result="1" />
+		</options>
+		<description>
+			A journalist wide known for taking a big role in the last political campaign. 
+			He likes to look for gossip, and to bring out in his articles.
+		</description>
+		<descriptionAdd>
+			Evryone who spent more than a week with him said that he was the annoying person they ever met.
+		</descriptionAdd>	
+	</fly>
+	
+	<spider name="Perishal Moln" animal="spider" photo="priest" silhouette="s_cil">
+		<options>
+			<option name="elephant" result="-2" />
+			<option name="bear" result="-2"/>
+			<option name="lynx" result="0"/>			
+			<option name="strekoza" result="1" />
+		</options>
+		<description>
+			Archbishop, who is known as one of the most influential celebrities of our time. 
+			He has the power over people hearts if not minds. But those, who play the game of power say he is someone you should watch out for.
+		</description>
+		<descriptionAdd>
+			He likes to drink juice before going to bed.
+		</descriptionAdd>	
+	</spider>
+	
+	<lion name="Garold Torion" animal="lion" photo="lion" silhouette="s_cil">
+		<options>
+			<option name="elephant" result="-2" />
+			<option name="bear" result="-2"/>
+			<option name="lynx" result="0"/>			
+			<option name="strekoza" result="1" />
+		</options>
+		<description>
+			President of an international bank. Evryone around him feels how noble and greatfull he is. 
+			He is a great orator who has a voice filled with power.
+		</description>
+		<descriptionAdd>
+			He has long red hair that does down to his shoulders.
+		</descriptionAdd>	
+	</lion>
 </targets>
