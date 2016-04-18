@@ -66,12 +66,12 @@
 		</descriptionAdd>	
 	</snake>
 	
-	<!--<sokol name="Al Bein" animal="sokol" photo="sokol" silhouette="s_cil">
+	<sokol name="Al Bein" animal="sokol" photo="sokol" silhouette="s_cil">
 		<options>
 			<option name="elephant" result="-2" />
 			<option name="bear" result="-2"/>
+			<option name="lynx" result="1"/>			
 			<option name="strekoza" result="-1" />
-			<option name="sokol" result="1"/>			
 		</options>
 		<description>
 			Now a general, he was a famous pilot.
@@ -79,5 +79,5 @@
 		<descriptionAdd>
 			It is known that he once survived a crash without any injuries.
 		</descriptionAdd>	
-	</sokol>-->
+	</sokol>
 </targets>
