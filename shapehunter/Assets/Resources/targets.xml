@@ -50,4 +50,34 @@
 			When he was young his rivals shop was mysteriosly ruined.  
 		</descriptionAdd>	
 	</elephant>
+	
+	<snake name="Grauss Kornificus" animal="snake" photo="snake" silhouette="s_cil">
+		<options>
+			<option name="elephant" result="-2" />
+			<option name="bear" result="-2"/>
+			<option name="strekoza" result="-1" />
+			<option name="sokol" result="1"/>			
+		</options>
+		<description>
+			A very smart and cunning mafia boss. It feels really uneasy when he is looking at you. It feels like he knows what you are thinking.
+		</description>
+		<descriptionAdd>
+			He is said to have used poison to kill those who left his gang.
+		</descriptionAdd>	
+	</snake>
+	
+	<!--<sokol name="Al Bein" animal="sokol" photo="sokol" silhouette="s_cil">
+		<options>
+			<option name="elephant" result="-2" />
+			<option name="bear" result="-2"/>
+			<option name="strekoza" result="-1" />
+			<option name="sokol" result="1"/>			
+		</options>
+		<description>
+			Now a general, he was a famous pilot.
+		</description>
+		<descriptionAdd>
+			It is known that he once survived a crash without any injuries.
+		</descriptionAdd>	
+	</sokol>-->
 </targets>

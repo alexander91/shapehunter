@@ -13,7 +13,7 @@ public class Player
 
     public CompletedStuff additionalProgress = new CompletedStuff();
 
-    public List<string> targetsIds = new List<string> { "bear", "fox", "elephant" };
+    public List<string> targetsIds = new List<string> { "bear", "fox", "elephant", "snake" };
     public List<string> complete = new List<string>();
 
     public string currentEnemy;
