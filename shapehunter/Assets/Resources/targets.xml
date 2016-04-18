@@ -35,7 +35,7 @@
 		</descriptionAdd>	
 	</fox>
 	
-	<elephant name="Deglon Prumt" animal="elephant" photo="Fat_Man_clip_art_hight" silhouette="person">
+	<elephant name="Deglon Prumt" animal="elephant" photo="Fat_Man_clip_art_hight" silhouette="slon">
 		<options>
 			<option name="dog" result="-2"/>
 			<option name="mangoose" result="-1" />
@@ -51,7 +51,7 @@
 		</descriptionAdd>	
 	</elephant>
 	
-	<snake name="Grauss Kornificus" animal="snake" photo="snake" silhouette="s_cil">
+	<snake name="Grauss Kornificus" animal="snake" photo="snake" silhouette="s_vorot">
 		<options>
 			<option name="elephant" result="-2" />
 			<option name="bear" result="-2"/>
@@ -67,7 +67,7 @@
 		</descriptionAdd>	
 	</snake>
 	
-	<sokol name="Al Bein" animal="sokol" photo="sokol" silhouette="s_cil">
+	<sokol name="Al Bein" animal="sokol" photo="sokol" silhouette="s_vorot">
 		<options>
 			<option name="bear" result="0"/>
 			<option name="lynx" result="1"/>			
@@ -75,14 +75,14 @@
 			<option name="mangoose" result="-2" />
 		</options>
 		<description>
-			Now a general, he was a famous pilot.
+			An experienced pilot. Sky is his home. Al went a long way from sergeant to colonel-pilot Wing Commander. 
 		</description>
 		<descriptionAdd>
 			It is known that he once survived a crash without any injuries.
 		</descriptionAdd>	
 	</sokol>
 	
-	<fly name="Dalran Monar" animal="fly" photo="journalist" silhouette="s_cil">
+	<fly name="Dalran Monar" animal="fly" photo="journalist" silhouette="slon">
 		<options>
 			<option name="rhino" result="0" />
 			<option name="cat" result="0"/>
@@ -98,7 +98,7 @@
 		</descriptionAdd>	
 	</fly>
 	
-	<spider name="Perishal Moln" animal="spider" photo="priest" silhouette="s_cil">
+	<spider name="Perishal Moln" animal="spider" photo="priest" silhouette="s_vorot">
 		<options>
 			<option name="cat" result="-1" />
 			<option name="strekoza" result="-2" />
