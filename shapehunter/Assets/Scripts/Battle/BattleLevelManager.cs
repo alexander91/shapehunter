@@ -29,6 +29,9 @@ public class BattleLevelManager : MonoBehaviour {
     [SerializeField]
     UIButton panel;
 
+    [SerializeField]
+    UITexture blood;
+
     GameState state = new ShowingChoices();
 
     #region States
@@ -93,6 +96,11 @@ public class BattleLevelManager : MonoBehaviour {
             manager.endRound.SetActive(true);
             manager.ShowFightResults(manager.myAnimal);
             manager.state = new EndScreenChoices();
+            BattleResult result = manager.winDictionary[manager.myAnimal];
+            if ((result == BattleResult.FightWon)||(result == BattleResult.FightLostDeath))
+            {
+                manager.blood.gameObject.SetActive(true);
+            }
         }
     }
 

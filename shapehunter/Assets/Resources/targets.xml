@@ -59,7 +59,8 @@
 			<option name="sokol" result="1"/>			
 		</options>
 		<description>
-			A very smart and cunning mafia boss. It feels really uneasy when he is looking at you. It feels like he knows what you are thinking.
+			A very smart and cunning mafia boss. It feels really uneasy when he is looking at you. 
+			It feels like he knows what you are thinking.
 		</description>
 		<descriptionAdd>
 			He is said to have used poison to kill those who left his gang.
@@ -83,9 +84,9 @@
 	
 	<fly name="Dalran Monar" animal="fly" photo="journalist" silhouette="s_cil">
 		<options>
-			<option name="elephant" result="-2" />
-			<option name="bear" result="-2"/>
-			<option name="lynx" result="0"/>			
+			<option name="rhino" result="0" />
+			<option name="cat" result="0"/>
+			<option name="snake" result="0"/>			
 			<option name="strekoza" result="1" />
 		</options>
 		<description>
@@ -99,10 +100,10 @@
 	
 	<spider name="Perishal Moln" animal="spider" photo="priest" silhouette="s_cil">
 		<options>
-			<option name="elephant" result="-2" />
-			<option name="bear" result="-2"/>
-			<option name="lynx" result="0"/>			
-			<option name="strekoza" result="1" />
+			<option name="cat" result="-1" />
+			<option name="strekoza" result="-2" />
+			<option name="raven" result="1"/>
+			<option name="lynx" result="-1"/>			
 		</options>
 		<description>
 			Archbishop, who is known as one of the most influential celebrities of our time. 
@@ -115,10 +116,10 @@
 	
 	<lion name="Garold Torion" animal="lion" photo="lion" silhouette="s_cil">
 		<options>
-			<option name="elephant" result="-2" />
-			<option name="bear" result="-2"/>
-			<option name="lynx" result="0"/>			
-			<option name="strekoza" result="1" />
+			<option name="rhino" result="1" />
+			<option name="dog" result="-2"/>
+			<option name="lynx" result="-2"/>			
+			<option name="fox" result="-2" />
 		</options>
 		<description>
 			President of an international bank. Evryone around him feels how noble and greatfull he is. 

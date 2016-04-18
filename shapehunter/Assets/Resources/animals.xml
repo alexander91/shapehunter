@@ -15,4 +15,5 @@
 	<mangoose name="mangoose" picture="mangoose"/>
 	<fly name="fly" picture="fly"/>
 	<lion name="lion" picture="lion"/>
+	<rhino name="rhino" picture="rhino"/>
 </animals>
