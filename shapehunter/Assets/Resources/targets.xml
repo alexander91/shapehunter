@@ -35,7 +35,7 @@
 		</descriptionAdd>	
 	</fox>
 	
-	<elephant name="Deglon Prumt" animal="elephant" photo="Fat_Man_clip_art_hight" silhouette="person">
+	<elephant name="Deglon Prumt" animal="elephant" photo="eleph" silhouette="person">
 		<options>
 			<option name="dog" result="-2"/>
 			<option name="mangoose" result="-1" />
