@@ -26,6 +26,9 @@ public class BattleLevelManager : MonoBehaviour {
     [SerializeField]
     GameObject endRound;
 
+    [SerializeField]
+    UIButton panel;
+
     GameState state = new ShowingChoices();
 
     #region States
@@ -39,7 +42,7 @@ public class BattleLevelManager : MonoBehaviour {
     {
         public override void Proceed(BattleLevelManager manager)
         {
-            
+            manager.panel.onClick.Add(new EventDelegate(manager.Proceed));
         }
     }
 
@@ -47,6 +50,7 @@ public class BattleLevelManager : MonoBehaviour {
     {
         public override void Proceed(BattleLevelManager manager)
         {
+            manager.panel.onClick.Clear();
             foreach (var tween in manager.changingFormTweens)
             {
                 tween.PlayForward();
@@ -85,6 +89,7 @@ public class BattleLevelManager : MonoBehaviour {
     {
         public override void Proceed(BattleLevelManager manager)
         {
+            manager.panel.onClick.Add(new EventDelegate(manager.Proceed));
             manager.endRound.SetActive(true);
             manager.ShowFightResults(manager.myAnimal);
             manager.state = new EndScreenChoices();
